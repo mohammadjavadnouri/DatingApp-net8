@@ -5,9 +5,8 @@ using WebApplication1.Entities;
 
 namespace WebApplication1.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class UsersController(DataContext context) : ControllerBase
+
+    public class UsersController(DataContext context) : BaseApiController
     {
 
         [HttpGet]
